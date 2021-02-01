@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="cv-style.css" />
+        <title>CV de Victor Martin</title>
+    </head>
+
+    <body>
+      <div id="page">
+        <div id="formulaire">
+            <h1>Formulaire de satisfaction</h1>
+            <form action="http://localhost/cv/cible.php" method="POST">
+              <div id="groupenom">
+                <p><label>Nom :<br><input type="text" name="nom" id="nom"/></label></p>
+                
+                
+                <div id="nomfaux"></div>
+              </div>
+
+              <div id="groupeprenom">
+                <p><label>Prénom :<br><input type="text" name="prenom" id="prenom"/></label></p>
+
+                <div id="prenomfaux"></div>
+              </div>
+
+              <div id="groupedate">  
+                <p><label>Date de naissance (JJ/MM/AAAA):<input type="text" name="date" id="date"/></label></p>
+                
+                <div id="faussedate"></div>
+              </div>
+
+              <p><label for="pays-select"> Nationalité :</label></p>
+
+              <select name="pays" id="pays-select">
+                <option value="france">France</option>
+                <option value="espagne">Espagne</option>
+                <option value="italie">Italie</option>
+                <option value="portugal">Portugal</option>
+                <option value="allemagne">Allemagne</option>
+              </select>
+
+              <div id="groupemail">
+                <p><label>Adresse e-mail : <input type="text" name="mail" id="mail"></label></p>
+                
+                <div id="mailfaux"></div>
+              </div>
+
+                <p>Que pensez-vous de cette page web?</p>
+                <div id="select-consigne"><p>Veuillez sélectionner un choix</p></div>
+                <p><label>Incroyable<input type="radio" name="avis" class="select" value="incroyable"></label>
+                <p><label>Bien<input type="radio" name="avis" class="select" value="bien"></label>
+                <p><label>Pas mal<input type="radio" name="avis" class="select" value="pamal"></label>
+                <p><label>Pas terrible<input type="radio" name="avis" class="select" value="paterrible"></label>
+                  
+              <input type="submit" name="envoyer" id="bouton">
+            </form>
+          <script src="script.js"></script>
+        </div>
+
+        <div id="bloc_page">
+
+            <header>
+              <img src="photo.jpg" alt="Portrait de Victor Martin">
+              <div id="entete"><h1>Victor Martin</h1><h2>Formation Developpeur Web et Mobile</h2></div>
+            </header>
+            
+            <div id="section1">
+
+              <div id="experience">
+                <h1>Expérience Professionnelle</h1>
+                <h2>Août 2019 à Aujourd’hui : Musicien en voie de professionnalisation</h2>
+                <ul>
+                  <li><strong>Plusieurs tournées en France et à l'étranger</strong>: assurer plus de <strong>40 dates</strong> en 1 an et demi, prendre contact avec les programmateurs·trices, et co-organiser les dates en accord avec le parcours, et le budget prévu</li>
+                  <li id="gestion"><strong>Gestion des réseaux sociaux</strong>: solliciter régulièrement les fans avec du contenu engageant</li>
+                        <li id="puce"><ul>
+                          <li>841 abonné·es sur <a href="https://www.facebook.com/YUZUtheband/" target="_blank">Facebook</a></li>
+                          <li>949 abonné·es sur <a href="https://www.instagram.com/yuzutheband" target="_blank">Instagram</a></li>
+                          <li>82 abonné·es sur <a href="https://www.youtube.com/channel/UC3vbhoqznHHI-r87lIzGyag/featured" target="_blank">YouTube</a> et plusieurs milliers de vues</li>
+                        </ul></li>
+                  </ul>
+
+                  <h2>Février 2015 à Août 2019 : Assistant d’Education</h2>
+                  <ul>
+                    <li>Assurer la sécurité des élèves de l’établissement</li>
+                    <li>Participer au suivi des élèves avec l’équipe pédagogique et éducative</li>
+                    <li>Mettre en place des actions éducatives avec les autres personnels de l’établissement</li>
+                  </ul>
+
+                  <h1>Formation</h1>
+                  <ul>
+                    <li><strong>2018</strong> · Master 1 en Sciences de l’Éducation · ESPE de
+                    Draguignan</li>
+                    <li><strong>2014</strong> · Licence de Droit Public · Faculté de Droit de Nice</li>
+                    <li><strong>2010</strong> · 1ère année de classe préparatoire aux grandes écoles d’ingénieurs option PTSI · Lycée La Prat’s de Cluny</li>
+                    <li><strong>2009</strong> · Baccalauréat Général Scientifique · Lycée Albert Calmette de Nice</li>
+                  </ul>
+
+              </div>
+
+              <div id="bandeau">
+
+                <div id="infos">
+                  <h1>Informations de contact</h1>
+                  <p>18 rue de la plaine de Cimiez</p>
+                  <p>06000 Nice</p>
+                  <p>Email : <a href="mailto:martin.vic@hotmail.fr">martin.vic@hotmail.fr</a></p>
+                  <p>Né le 26/05/1992, 28 ans</p>
+                </div>
+
+                <div id="competences">
+                  <h1>Compétences</h1>
+                  <h2>Développement:</h2>
+                  <p>HTML, CSS, PHP, Javascript</p>
+                  <h2>Anglais:</h2>
+                  <p>Courant</p>
+                </div>
+
+                <div id="interet">
+                  <h1>Centre d'intérêt</h1>
+                  <p>Musique, mathématiques, et voyages</p>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>    
+    </body>
+</html>

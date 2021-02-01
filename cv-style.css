@@ -1,0 +1,311 @@
+@font-face {
+    font-family: 'acherusgrotesque-regular';
+    src: url('polices/acherusgrotesque-regular-webfont.woff2') format('woff2'),
+         url('polices/acherusgrotesque-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'leckerlioneregular';
+    src: url('polices/leckerlione-regular-webfont.woff2') format('woff2'),
+         url('polices/leckerlione-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+	background: linear-gradient(#5C7892, #2D6497);
+}
+
+#bloc_page{
+	font-family: 'acherusgrotesque-regular', serif;
+	font-weight: normal;
+	width: 900px;
+	margin-left: 100px;
+	color: #4c4848;
+}
+
+header{
+	display: flex;
+	background-color: #9db6bd;
+}
+
+#entete{
+	display: flex;
+	flex-direction: column;
+	margin-right: 50px;
+	align-items: flex-end;
+}
+
+header img{
+	max-height: 170px;
+	margin: auto;
+	margin-left: 70px;
+	border-radius: 200px;
+}
+
+header h1{
+	font-weight: bold;
+	color: #f1f0f0;
+	font-size: 5em;
+	margin-bottom: 0px;
+	margin-left: 50px;
+}
+
+header h2{
+	margin-top: 0px;
+}
+
+#bandeau{
+	background-color: #f1f0f0;
+	width: 270px;
+	padding: 50px 15px 5px 25px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+#bandeau h1{
+	font-size: 1.2em;
+	text-align: center;
+	font-family: leckerlioneregular, acherusgrotesque-regular, serif;
+	font-style: normal;
+	font-size: 1.5em;
+}
+
+#bandeau h2{
+	font-size: 1em;
+}
+
+#section1{
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+#experience{
+	width: 64%;
+	margin-right: 0px;
+	background-color: #e4e7e8;
+	padding: 0px 50px 0px 50px;
+}
+
+#experience h1{
+	color: #9db6bd;
+	margin-top: 50px;
+	font-family: leckerlioneregular, acherusgrotesque-regular, serif;
+	font-style: normal;
+	font-size: 2.3em;
+	text-shadow: 1px 1px 1px black;
+}
+
+#experience h2{
+	font-size: 1.2em;
+}
+
+strong{
+	font-weight: bold;
+}
+
+#experience a{
+	color: #962800;
+	text-decoration: none;
+}
+
+#experience a:hover{
+	color: #E94103;
+}
+
+#infos a{
+	color: #962800;
+	text-decoration: none;
+}
+
+#infos a:hover{
+	color: #E94103;
+}
+
+#puce{
+	list-style-type: none;
+}
+
+#puce li{
+	list-style-image: url('ico_liensexterne.png');
+}
+
+#gestion{
+	margin-top: 10px;
+}
+
+#page{
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+#formulaire{
+	font-family: acherusgrotesque-regular, serif;
+	font-size: 0.9em;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-top: 30px;
+	background-color: #9db6bd;
+	padding-right: 20px;
+	padding-left: 20px;
+	border-radius: 5px;
+	height: 830px;
+	max-width: 240px;
+	position: relative;
+}
+
+#bouton{
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+}
+
+#formulaire h1{
+	color: #4c4848;
+	margin-top: 50px;
+	font-family: leckerlioneregular, acherusgrotesque-regular, serif;
+	font-style: normal;
+	font-size: 2.3em;
+}
+
+#groupenom{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: baseline;
+}
+
+#groupeprenom{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: baseline;
+}
+
+#groupedate{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: baseline;
+}
+
+#groupemail{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: baseline;
+}
+
+#nomfaux{
+  color: red;
+  font-size: 0.7em;
+  margin-left: 10px;
+}
+
+#prenomfaux{
+  color: red;
+  font-size: 0.7em;
+  margin-left: 10px;
+}
+
+#faussedate{
+  color: red;
+  font-size: 0.7em;
+}
+
+#mailfaux{
+  color: red;
+  font-size: 0.7em;
+  margin-left: 10px;
+}
+
+#select-consigne{
+  color: green;
+  font-size: 0.7em;
+}
+
+@media all and (max-width: 1000px){
+
+	#page{
+		flex-direction: column-reverse;
+	}
+
+	#bloc_page{
+		margin: auto;
+	}
+
+	#formulaire{
+		margin: auto;
+		margin-top: 20px;
+		display: flex;
+		max-width: 700px;
+		height: 580px;
+
+	}
+
+	#bouton{
+		right: 100px;
+	}
+
+	#select-consigne{
+		top: 346px;
+	}
+}
+
+@media all and (max-width: 800px){
+
+	#bloc_page{
+		width: auto;
+	}
+
+	header img{
+		margin-left: 30px;
+	}
+
+	#entete{
+		align-items: flex-start;
+	}
+
+	header h2{
+		margin-left: 50px;
+	}
+
+	#section1{
+		flex-direction: column;
+	}
+
+	#experience{
+		width: auto;
+	}
+
+	#bandeau{
+		width: auto;
+		height: auto;
+		flex-direction: row;
+	}
+
+}
+
+@media all and (max-width: 650px){
+	header img{
+		display: none;
+	}
+
+	#interet{
+		display: none;
+	}
+
+	#formulaire{
+		height: 660px;
+	}
+}
+
+
+
+
+
+
+
